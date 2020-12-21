@@ -61,7 +61,7 @@ $form['qr'] = $qr;
 
 $sHtml = "<form id='alipaysubmit' name='alipaysubmit' action='./pay/' method='POST'>";
 
-while (list($key, $val) = each($form)) {
+foreach ($form as $key => $val) {
     if ($val!=null) {
         //$val = $this->characet($val, $this->postCharset);
         $val = str_replace("'", "&apos;", $val);
@@ -69,7 +69,6 @@ while (list($key, $val) = each($form)) {
         $sHtml .= "<input type='hidden' name='" . $key . "' value='" . $val . "'/>";
     }
 }
-
 //submit按钮控件请不要含有name属性
 $sHtml = $sHtml . "<input type='submit' value='ok' style='display:none;''></form>";
 
