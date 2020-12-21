@@ -59,7 +59,7 @@ $.ajax({
               });
                 html+='<div class="total">小计<span class="price">￥'+res['total']+'</span></div>';
                 $(".products").html(html);
-                html='共收到来自['+res['diff_buyer']+']位大爷的打赏，人民币金额共计['+res['total_money']+']元。您的每次付出，我们皆有记录！如果您在打赏后没有记录，请反馈给我们。由于贫穷，现特价出售本站备用域名[pinqiong.cc]，有意者请发送邮件到<img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn1@master/2020/01/13/284840575cfc5db9038baf8a6a37a132.png"。源码下载请到 https://github.com/yumusb/pinqiong.net>';
+                html='共收到来自['+res['diff_buyer']+']位大爷的打赏，人民币金额共计['+res['total_money']+']元。您的每次付出，我们皆有记录！如果您在打赏后没有记录，请反馈给我们。由于贫穷，现特价出售本站备用域名[pinqiong.cc]，有意者请发送邮件到<img src="https://cdn.jsdelivr.net/gh/pic-cdn/cdn1@master/2020/01/13/284840575cfc5db9038baf8a6a37a132.png">源码下载请到 https://github.com/yumusb/pinqiong.net';
                 $(".total1").html(html);
 
           } else {
